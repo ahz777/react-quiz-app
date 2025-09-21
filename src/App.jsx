@@ -7,7 +7,7 @@ function App() {
     setStartQuiz(true);
   }
   return (
-    <>{startQuiz ? <QuizPage /> : <StartPage onClick={handleStartQuiz} />}</>
+    <>{startQuiz ? <QuizPage /> : <StartPage onStart={handleStartQuiz} />}</>
   );
 }
 

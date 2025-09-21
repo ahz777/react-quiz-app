@@ -70,7 +70,11 @@ export default function QuizPage() {
         />
       ))}
       {questions.length > 0 && !showResults && (
-        <button className="check-btn" onClick={handleAnswersCheck}>
+        <button
+          type="button"
+          className="check-btn"
+          onClick={handleAnswersCheck}
+        >
           Check Answers
         </button>
       )}
@@ -79,12 +83,16 @@ export default function QuizPage() {
           <p>
             You scored {score}/{questions.length} correct answers
           </p>
-          <button className="play-again-btn" onClick={handlePlayAgain}>
+          <button
+            type="button"
+            className="play-again-btn"
+            onClick={handlePlayAgain}
+          >
             Play Again
           </button>
         </div>
       )}
-      {questions.length == 0 && (
+      {questions.length === 0 && (
         <div className="fetching-msg">fetching questions...</div>
       )}
     </div>

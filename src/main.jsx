@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
-  // <StrictMode> // disabled for development purposes
-  <App />
-  // </StrictMode>
+  <StrictMode>
+    <App />
+  </StrictMode>
 );

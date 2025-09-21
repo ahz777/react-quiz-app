@@ -49,28 +49,6 @@ npm run build
 npm run preview
 ```
 
-## Scripts
-
-- `npm run dev` — start Vite dev server
-- `npm run build` — build for production
-- `npm run preview` — preview the production build
-- `npm run lint` — run ESLint
-
-## Configuration (optional)
-
-You can move API configuration to environment variables for easier customization:
-
-- `VITE_TRIVIA_API_URL` — base API URL (default used in code: `https://opentdb.com/api.php?amount=5`)
-
-Vite environment variables are read from `.env` files:
-
-```
-# .env
-VITE_TRIVIA_API_URL=https://opentdb.com/api.php?amount=5
-```
-
-Then in code: `import.meta.env.VITE_TRIVIA_API_URL`.
-
 ## Project Structure
 
 ```

@@ -1,7 +1,5 @@
 # To Be Fixed — React Quiz App
 
-This document is a focused, actionable checklist derived from the project review.
-
 ## High Priority
 
 1. Prevent infinite retry loop on fetch
@@ -9,10 +7,10 @@ This document is a focused, actionable checklist derived from the project review
 - Limit retries (e.g., 3–5) with exponential backoff
 - Show error UI and a manual "Retry" button
 
-2. Correct results styling logic
+2. ~~Correct results styling logic~~
 
-- Avoid fading out the correct answer when a wrong selection was made
-- Apply `incorrect` only to answers that are neither the correct answer nor the selected one
+- ~~Avoid fading out the correct answer when a wrong selection was made~~
+- ~~Apply `incorrect` only to answers that are neither the correct answer nor the selected one~~
 
 3. Add fetch cleanup and unmount safety
 
@@ -34,16 +32,16 @@ This document is a focused, actionable checklist derived from the project review
 - Avoid using array index for `id` and React `key`
 - Use a stable id (e.g., hash of question text + correct answer)
 
-7. Loading vs. stale UI
+7. ~~Loading vs. stale UI~~
 
-- Add `isLoading` for initial and replay fetches
-- Hide old questions until new data is ready
+- ~~Add `isLoading` for initial and replay fetches~~
+- ~~Hide old questions until new data is ready~~
 
 ## UI/UX & Accessibility
 
 8. Accessibility improvements
 
-- Add `type="button"` to all action/answer buttons
+- ~~Add `type="button"` to all action/answer buttons~~
 - Use `aria-pressed` for selected states
 - Add `aria-live="polite"` for loading and error messages
 
@@ -51,27 +49,27 @@ This document is a focused, actionable checklist derived from the project review
 
 - Replace fixed width container with responsive layout and breakpoints for mobile
 
-10. Visual clarity on results
+10. ~~Visual clarity on results~~
 
-- Ensure styles for `selected`, `correct`, `wrong`, and `neutral` do not conflict
+- ~~Ensure styles for `selected`, `correct`, `wrong`, and `neutral` do not conflict~~
 
 ## Code Quality
 
-11. StrictMode
+11. ~~StrictMode~~
 
-- Re-enable `<StrictMode>` in development
+- ~~Re-enable `<StrictMode>` in development~~
 
-12. ESLint hooks/exhaustive-deps
+12. ~~ESLint hooks/exhaustive-deps~~
 
-- Move `fetchQuestions` inside `useEffect` or wrap with `useCallback` and include in deps
+- ~~Move `fetchQuestions` inside `useEffect` or wrap with `useCallback` and include in deps~~
 
-13. Equality checks
+13. ~~Equality checks~~
 
-- Use `===` instead of `==`
+- ~~Use `===` instead of `==`~~
 
-14. Clearer prop names
+14. ~~Clearer prop names~~
 
-- `StartPage` — rename `onClick` → `onStart`
+- ~~`StartPage` — rename `onClick` → `onStart`~~
 
 15. Types
 
@@ -79,18 +77,18 @@ This document is a focused, actionable checklist derived from the project review
 
 ## Build/Tooling
 
-16. Asset paths
+16. ~~Asset paths~~
 
-- Consider `/images/favicon.png` for Vite public assets (consistent base path)
+- ~~Consider `/images/favicon.png` for Vite public assets (consistent base path)~~
 
-17. Fonts optimization
+17. ~~Fonts optimization~~
 
-- Remove duplicate preconnects
-- Combine font families into a single Google Fonts request if possible
+- ~~Remove duplicate preconnects~~
+- ~~Combine font families into a single Google Fonts request if possible~~
 
-18. Formatting
+18. ~~Formatting~~
 
-- Add Prettier for consistent formatting
+- ~~Add Prettier for consistent formatting~~
 
 19. Engines
 
@@ -109,10 +107,6 @@ This document is a focused, actionable checklist derived from the project review
 
 - Prefer CSS background images over `content: url(...)` pseudo-elements to reduce layout shifts
 
-22. Box-sizing
+22. ~~Box-sizing~~
 
-- Add a global rule: `*, *::before, *::after { box-sizing: border-box; }`
-
----
-
-When ready, I can implement these changes incrementally (starting with High Priority) and open PRs for each group of fixes.
+- ~~Add a global rule: `*, *::before, *::after { box-sizing: border-box; }`~~

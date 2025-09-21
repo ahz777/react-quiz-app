@@ -1,9 +1,11 @@
-export default function StartPage({ onClick }) {
+export default function StartPage({ onStart }) {
   return (
     <div className="start-page">
       <h1>Quizzical</h1>
       <p>Some description if needed</p>
-      <button onClick={onClick}>Start Quiz</button>
+      <button type="button" onClick={onStart}>
+        Start Quiz
+      </button>
     </div>
   );
 }
