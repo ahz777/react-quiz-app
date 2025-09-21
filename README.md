@@ -84,5 +84,5 @@ react-quiz-app/
 - If deploying under a sub-path, confirm asset paths (e.g., `/images/...`) are correct.
 
 ## License
-This project is licensed under the MIT License – see the [LICENSE](https://github.com/ahz777/react-quiz-app/blob/main/LICENSE) file for details.
 
+This project is licensed under the MIT License – see the [LICENSE](https://github.com/ahz777/react-quiz-app/blob/main/LICENSE) file for details.
